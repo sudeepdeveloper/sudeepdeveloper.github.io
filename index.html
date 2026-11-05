@@ -65,8 +65,17 @@
             Hire Me
         </a>
 
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="navbar" aria-expanded="false">
-            <i class="fas fa-bars"></i>
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-labelledby="menuToggleAccessibleText"
+            aria-controls="navbar"
+            aria-expanded="false"
+            title="Open navigation menu">
+            <span id="menuToggleAccessibleText" class="screen-reader-text">Open navigation menu</span>
+            <i class="fas fa-bars" aria-hidden="true"></i>
         </button>
 
     </div>
@@ -856,6 +865,38 @@
                 </div>
 
             </article>
+						 <article class="project-card" data-category="wordpress">
+
+                <div class="project-image project-six">
+
+                    <div class="project-overlay">
+
+                        <a href="https://www.epicureancoffee.net/" target="_blank" rel="noopener" aria-label="View project: Epicurean Coffee">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-tags">
+                        <span>WooCommerce</span>
+                        <span>Stripe /Klarna</span>
+                    </div>
+
+                    <h3>Epicurean Coffee – E-commerce Website</h3>
+
+                    <p>
+                        Developed and customized the Epicurean Coffee website, a premium specialty coffee e-commerce platform focused on showcasing and selling high-quality Colombian coffee products.
+
+The project involved creating a professional, user-friendly online shopping experience with an attractive product presentation, responsive layouts, and seamless shopping functionality.
+                    </p>
+
+                </div>
+
+            </article>
 
 
             <article class="project-card" data-category="shopify">
@@ -924,38 +965,7 @@
             </article>
 			
 			
-			 <article class="project-card" data-category="wordpress">
 
-                <div class="project-image project-two">
-
-                    <div class="project-overlay">
-
-                        <a href="https://www.epicureancoffee.net/" target="_blank" rel="noopener" aria-label="View project: Epicurean Coffee">
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <div class="project-tags">
-                        <span>WooCommerce</span>
-                        <span>Stripe /Klarna</span>
-                    </div>
-
-                    <h3>Epicurean Coffee – E-commerce Website</h3>
-
-                    <p>
-                        Developed and customized the Epicurean Coffee website, a premium specialty coffee e-commerce platform focused on showcasing and selling high-quality Colombian coffee products.
-
-The project involved creating a professional, user-friendly online shopping experience with an attractive product presentation, responsive layouts, and seamless shopping functionality.
-                    </p>
-
-                </div>
-
-            </article>
 
         </div>
 
@@ -1505,8 +1515,14 @@ The project involved creating a professional, user-friendly online shopping expe
         </p>
 
 
-        <a href="#home" class="back-top" aria-label="Back to top">
-            <i class="fas fa-arrow-up"></i>
+        <a
+            href="#home"
+            class="back-top"
+            aria-label="Back to top"
+            aria-labelledby="backTopAccessibleText"
+            title="Back to top">
+            <span id="backTopAccessibleText" class="screen-reader-text">Back to top</span>
+            <i class="fas fa-arrow-up" aria-hidden="true"></i>
         </a>
 
     </div>
@@ -3435,6 +3451,21 @@ textarea:focus-visible {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+
+/* Screen-reader-only text: accessible name remains available without
+   changing the visual design or removing the text from the accessibility tree. */
+.screen-reader-text {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
 
 </style>
